@@ -77,6 +77,64 @@ a, a:visited, a:hover, a:active {
   width: 100%;
 }
 
+.discografia {
+  grid-template-rows: 500px repeat(6, min-content);
+  grid-template-columns: 10% 80% 10%;
+  gap: 40px;
+  justify-content: center;
+}
+
+.disc__picker {
+  grid-column: 2/3;
+  gap: 6px;
+}
+
+.picker__album {
+  height: 100%;
+  width: 25%;
+  border: #312F32 1px solid;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.secalbum__title {
+  width: 50%;
+  padding: 0px 10px;
+}
+
+.secalbum__spotify {
+  
+}
+
+.album1 {
+  background-image: url(../assets/LoveAndLiveCover.png);
+}
+
+.album2 {
+  background-image: url(../assets/MaxAndMatchCover.jpg);
+}
+
+.album3 {
+  background-image: url(../assets/BeautyAndTheBeaTCover.jpg);
+}
+
+.album4 {
+  background-image: url(../assets/LoveAndLiveCover.png);
+}
+
+.card1 {
+  background-image: url(../assets/Card1.png);
+  flex-basis: 450px;
+  box-shadow: 5px 5px 5px #312F32;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .fa-brands {
   text-decoration: none;
   color: black;
