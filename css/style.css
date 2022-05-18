@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: #000000;
   justify-content: stretch;
   font-family: "Montserrat", Verdana;
   margin: 0 auto;
@@ -21,11 +21,14 @@ body {
 }
 
 main {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-right: 19px;
+  padding-left: 19px;
   grid-area: content;
   width: 100%;
   text-align: center;
   justify-content: center;
-  padding: 19px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -100,7 +103,7 @@ form p {
   font-size: 32px;
 }
 
-button {
+button, .boton-ext {
   border: none;
   outline: none;
   color: #111;
@@ -113,6 +116,11 @@ button {
   margin: 10px;
   font-family: inherit;
   font-weight: 700;
+}
+
+.boton-ext {
+  width: 150px;
+  font-size: 20px;
 }
 
 .button:before {
@@ -175,7 +183,7 @@ button {
 
 .header {
   grid-area: header;
-  background-color: white;
+  background-color: #ffffff;
   width: 100%;
   height: 60px;
   position: sticky;
@@ -208,7 +216,6 @@ button {
   font-size: 20px;
   font-weight: 700;
 }
-
 .nav__list a {
   text-decoration: none;
 }
@@ -272,7 +279,6 @@ button {
   text-align: center;
   width: 100%;
 }
-
 .content li {
   color: white;
 }

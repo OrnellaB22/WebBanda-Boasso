@@ -1,8 +1,18 @@
-$body_bg: black;
-$navbar_bg: white;
-
 $fontAlt1: Verdana;
 $fontAlt2: monospace;
+
+$estilos: (
+	color1: #000000,
+	color2: #ffffff,
+	tFuenteH1: 40px
+);
+
+@mixin paddings($top, $right, $bottom, $left) {
+	padding-top: $top;
+	padding-bottom: $bottom;
+	padding-right: $right;
+	padding-left: $left;
+}
 
 @font-face {
 	font-family: 'Comfortaa';
@@ -21,7 +31,7 @@ $fontAlt2: monospace;
 }
 
 body {
-	background-color: $body_bg;
+	background-color: map-get($estilos, color1);
 	justify-content: stretch;
 	font-family: 'Montserrat', $fontAlt1;
 	margin: 0 auto;
@@ -30,11 +40,12 @@ body {
 }
 
 main {
+	@include paddings(19px, 19px, 19px, 19px);
 	grid-area: content;
 	width: 100%;
 	text-align: center;
 	justify-content: center;
-	padding: 19px;
+
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -46,7 +57,7 @@ div {
 }
 
 h1 {
-	font-size: 40px;
+	font-size: map-get($estilos, tFuenteH1);
 }
 
 h2 {
@@ -125,6 +136,12 @@ button {
 	font-weight: 700;
 }
 
+.boton-ext {
+	@extend button;
+	width: 150px;
+	font-size: 20px;
+}
+
 .button:before {
 	content: '';
 	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -189,7 +206,7 @@ button {
 
 .header {
 	grid-area: header;
-	background-color: $navbar_bg;
+	background-color: map-get($estilos, color2);
 	width: 100%;
 	height: 60px;
 	position: sticky;
@@ -218,13 +235,12 @@ button {
 }
 
 .nav__list {
-		list-style: none;
-		font-size: 20px;
-		font-weight: 700;
-}
-
-.nav__list a {
-	text-decoration: none;
+	list-style: none;
+	font-size: 20px;
+	font-weight: 700;
+	& a {
+		text-decoration: none;
+	}
 }
 
 [class*="__container"] {
@@ -285,10 +301,9 @@ button {
 .content {
 	text-align: center;
 	width: 100%;
-}
-
-.content li {
-	color: white;
+	& li {
+		color: white;
+	}
 }
 
 .new__video {
