@@ -1,0 +1,721 @@
+@font-face {
+  font-family: 'Comfortaa';
+  font-weight: normal;
+  font-style: normal;
+  src: url(fonts/comfortaa.woff) format("woff");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Rubik+Glitch&display=swap');
+
+body {
+  font-family: 'Montserrat';
+}
+
+footer {
+  color: black;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+h2 {
+  font-family: 'Rubik Glitch', Arial;
+  border-top: 1.5px solid black;
+}
+
+h3 {
+  font-family: 'Rubik Glitch', Arial;
+  font-size: 1.5rem;
+  border-top: 1.5px solid black;
+}
+
+label {
+  width: 100%;
+}
+
+.environment {
+  position: absolute;
+  background-image: url(../assets/splash.jpg);
+  filter: blur(5px);
+  opacity: 0.5;
+}
+
+
+.h1T {
+  display: inline-block;
+  z-index: 2;
+  letter-spacing: 8px;
+  filter: drop-shadow(0 1px 3px);
+}
+
+.layers {
+  position: relative;
+}
+
+.layers::before,
+.layers::after {
+  content:  attr(data-text);
+  position: absolute;
+  width: 110%;
+  z-index: -1;
+}
+
+.layers::before {
+  top: 10px;
+  left: 15px;
+  color: #e0287d;
+}
+
+.layers::after {
+  top: 5px;
+  left: -10px;
+  color: #1bc7fb;
+}
+
+@keyframes paths {
+  0% {
+    clip-path: polygon(
+      0% 43%,
+      83% 43%,
+      83% 22%,
+      23% 22%,
+      23% 24%,
+      91% 24%,
+      91% 26%,
+      18% 26%,
+      18% 83%,
+      29% 83%,
+      29% 17%,
+      41% 17%,
+      41% 39%,
+      18% 39%,
+      18% 82%,
+      54% 82%,
+      54% 88%,
+      19% 88%,
+      19% 4%,
+      39% 4%,
+      39% 14%,
+      76% 14%,
+      76% 52%,
+      23% 52%,
+      23% 35%,
+      19% 35%,
+      19% 8%,
+      36% 8%,
+      36% 31%,
+      73% 31%,
+      73% 16%,
+      1% 16%,
+      1% 56%,
+      50% 56%,
+      50% 8%
+    );
+  }
+
+  5% {
+    clip-path: polygon(
+      0% 29%,
+      44% 29%,
+      44% 83%,
+      94% 83%,
+      94% 56%,
+      11% 56%,
+      11% 64%,
+      94% 64%,
+      94% 70%,
+      88% 70%,
+      88% 32%,
+      18% 32%,
+      18% 96%,
+      10% 96%,
+      10% 62%,
+      9% 62%,
+      9% 84%,
+      68% 84%,
+      68% 50%,
+      52% 50%,
+      52% 55%,
+      35% 55%,
+      35% 87%,
+      25% 87%,
+      25% 39%,
+      15% 39%,
+      15% 88%,
+      52% 88%
+    );
+  }
+
+  30% {
+    clip-path: polygon(
+      0% 53%,
+      93% 53%,
+      93% 62%,
+      68% 62%,
+      68% 37%,
+      97% 37%,
+      97% 89%,
+      13% 89%,
+      13% 45%,
+      51% 45%,
+      51% 88%,
+      17% 88%,
+      17% 54%,
+      81% 54%,
+      81% 75%,
+      79% 75%,
+      79% 76%,
+      38% 76%,
+      38% 28%,
+      61% 28%,
+      61% 12%,
+      55% 12%,
+      55% 62%,
+      68% 62%,
+      68% 51%,
+      0% 51%,
+      0% 92%,
+      63% 92%,
+      63% 4%,
+      65% 4%
+    );
+  }
+
+  45% {
+    clip-path: polygon(
+      0% 33%,
+      2% 33%,
+      2% 69%,
+      58% 69%,
+      58% 94%,
+      55% 94%,
+      55% 25%,
+      33% 25%,
+      33% 85%,
+      16% 85%,
+      16% 19%,
+      5% 19%,
+      5% 20%,
+      79% 20%,
+      79% 96%,
+      93% 96%,
+      93% 50%,
+      5% 50%,
+      5% 74%,
+      55% 74%,
+      55% 57%,
+      96% 57%,
+      96% 59%,
+      87% 59%,
+      87% 65%,
+      82% 65%,
+      82% 39%,
+      63% 39%,
+      63% 92%,
+      4% 92%,
+      4% 36%,
+      24% 36%,
+      24% 70%,
+      1% 70%,
+      1% 43%,
+      15% 43%,
+      15% 28%,
+      23% 28%,
+      23% 71%,
+      90% 71%,
+      90% 86%,
+      97% 86%,
+      97% 1%,
+      60% 1%,
+      60% 67%,
+      71% 67%,
+      71% 91%,
+      17% 91%,
+      17% 14%,
+      39% 14%,
+      39% 30%,
+      58% 30%,
+      58% 11%,
+      52% 11%,
+      52% 83%,
+      68% 83%
+    );
+  }
+
+  76% {
+    clip-path: polygon(
+      0% 26%,
+      15% 26%,
+      15% 73%,
+      72% 73%,
+      72% 70%,
+      77% 70%,
+      77% 75%,
+      8% 75%,
+      8% 42%,
+      4% 42%,
+      4% 61%,
+      17% 61%,
+      17% 12%,
+      26% 12%,
+      26% 63%,
+      73% 63%,
+      73% 43%,
+      90% 43%,
+      90% 67%,
+      50% 67%,
+      50% 41%,
+      42% 41%,
+      42% 46%,
+      50% 46%,
+      50% 84%,
+      96% 84%,
+      96% 78%,
+      49% 78%,
+      49% 25%,
+      63% 25%,
+      63% 14%
+    );
+  }
+
+  90% {
+    clip-path: polygon(
+      0% 41%,
+      13% 41%,
+      13% 6%,
+      87% 6%,
+      87% 93%,
+      10% 93%,
+      10% 13%,
+      89% 13%,
+      89% 6%,
+      3% 6%,
+      3% 8%,
+      16% 8%,
+      16% 79%,
+      0% 79%,
+      0% 99%,
+      92% 99%,
+      92% 90%,
+      5% 90%,
+      5% 60%,
+      0% 60%,
+      0% 48%,
+      89% 48%,
+      89% 13%,
+      80% 13%,
+      80% 43%,
+      95% 43%,
+      95% 19%,
+      80% 19%,
+      80% 85%,
+      38% 85%,
+      38% 62%
+    );
+  }
+
+  1%,
+  7%,
+  33%,
+  47%,
+  78%,
+  93% {
+    clip-path: none;
+  }
+}
+
+.movement {
+  /* Normally this position would be absolute & on the layers, set to relative here so we can see it on the div */
+  position: relative;
+  animation: movement 8s step-end infinite;
+}
+
+@keyframes movement {
+  0% {
+    top: 0px;
+    left: -20px;
+  }
+
+  15% {
+    top: 10px;
+    left: 10px;
+  }
+
+  60% {
+    top: 5px;
+    left: -10px;
+  }
+
+  75% {
+    top: -5px;
+    left: 20px;
+  }
+
+  100% {
+    top: 10px;
+    left: 5px;
+  }
+}
+
+.opacity {
+  animation: opacity 5s step-end infinite;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0.1;
+  }
+
+  5% {
+    opacity: 0.7;
+  }
+
+  30% {
+    opacity: 0.4;
+  }
+
+  45% {
+    opacity: 0.6;
+  }
+
+  76% {
+    opacity: 0.4;
+  }
+
+  90% {
+    opacity: 0.8;
+  }
+
+  1%,
+  7%,
+  33%,
+  47%,
+  78%,
+  93% {
+    opacity: 0;
+  }
+}
+
+.font {
+  animation: font 7s step-end infinite;
+}
+
+@keyframes font {
+  0% {
+    font-weight: 100;
+    color: #e0287d;
+    filter: blur(3px);
+  }
+
+  20% {
+    font-weight: 500;
+    color: #fff;
+    filter: blur(0);
+  }
+
+  50% {
+    font-weight: 300;
+    color: #1bc7fb;
+    filter: blur(2px);
+  }
+
+  60% {
+    font-weight: 700;
+    color: #fff;
+    filter: blur(0);
+  }
+
+  90% {
+    font-weight: 500;
+    color: #e0287d;
+    filter: blur(6px);
+  }
+}
+
+.glitch span {
+  animation: paths 5s step-end infinite;
+}
+
+.glitch::before {
+  animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+    font 8s step-end infinite, movement 10s step-end infinite;
+}
+
+.glitch::after {
+  animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+    font 7s step-end infinite, movement 8s step-end infinite;
+}
+
+.moon__loading {
+  background-image: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  animation-name: loadAnim;
+  animation-duration: 2.2s;
+}
+
+@keyframes loadAnim {
+  0% {
+    background: #000 url(../assets/loading.gif) no-repeat center center;
+    background-size: 1000px;
+    z-index: 1000000000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  99.9% {
+    width: 100%;
+    height: 100%;
+    z-index: 1000000000;
+    position: fixed;
+    background: #000 url(../assets/loading.gif) no-repeat center center;
+    background-size: 1000px;
+  }
+
+  100% {
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+  }
+}
+
+.logo {
+  background-image: url(../assets/logo.svg);
+  background-repeat: no-repeat;
+  width: 170px;
+  height: 40px;
+}
+
+.justify-left {
+  justify-content: flex-end;
+}
+
+.banner {
+  background-image: url(../assets/BannerMain.png);
+  height: 500px;
+}
+
+.mainTitle {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.discografia {
+  grid-template-rows: 500px repeat(6, min-content);
+  grid-template-columns: 10% 80% 10%;
+  gap: 40px;
+  justify-content: center;
+}
+
+.disc__picker {
+  flex-wrap: wrap;
+  grid-column: 2/3;
+  gap: 6px;
+}
+
+.disc__picker h2 {
+  border-top: 1px solid black;
+}
+
+.picker__album {
+  height: 50%;
+  width: 49%;
+  border: #312F32 1px solid;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.secalbum__title {
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.secalbum__spotify {
+  width: 100%;
+}
+
+.album1 {
+  background-image: url(../assets/LoveAndLiveCover.png);
+}
+
+.album2 {
+  background-image: url(../assets/MaxAndMatchCover.jpg);
+}
+
+.album3 {
+  background-image: url(../assets/BeautyAndTheBeaTCover.jpg);
+}
+
+.album4 {
+  background-image: url(../assets/PlusPlusCover.jpg);
+}
+
+.card1 {
+  background-image: url(../assets/Card1.png);
+  flex-basis: 450px;
+  box-shadow: 5px 5px 5px #312F32;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fa-brands {
+  text-decoration: none;
+  color: black;
+}
+
+.members {
+  max-width: 50%;
+  grid-gap: 20px;
+}
+
+.members .img {
+  border-radius: 10px;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.member__container:hover .overlay {
+  opacity: 1;
+}
+
+.member__container {
+  max-width: 200px;
+}
+
+.img1 {
+  background-image: url(../assets/Heejin.jpg);
+  background-size: cover;
+}
+
+.img2 {
+  background-image: url(../assets/Hyunjin.jpg);
+  background-size: cover;
+}
+
+.img3 {
+  background-image: url(../assets/Haseul.jpg);
+  background-size: cover;
+}
+
+.img4 {
+  background-image: url(../assets/Yeojin.jpg);
+  background-size: cover;
+}
+
+.img5 {
+  background-image: url(../assets/Vivi.jpg);
+  background-size: cover;
+}
+
+.img6 {
+  background-image: url(../assets/KimLip.jpg);
+  background-size: cover;
+}
+
+.img7 {
+  background-image: url(../assets/Jinsoul.jpg);
+  background-size: cover;
+}
+
+.img8 {
+  background-image: url(../assets/Choerry.jpg);
+  background-size: cover;
+}
+
+.img9 {
+  background-image: url(../assets/Yves.jpg);
+  background-size: cover;
+}
+
+.img10 {
+  background-image: url(../assets/Chuu.jpg);
+  background-size: cover;
+}
+
+.img11 {
+  background-image: url(../assets/Gowon.jpg);
+  background-size: cover;
+}
+
+.img12 {
+  background-image: url(../assets/OliviaHye.jpg);
+  background-size: cover;
+}
+
+.button {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+
+  .nav-item a {
+    background: 
+      linear-gradient(
+          to right,
+          rgba(255, 255, 255, 1),
+          rgba(255, 255, 255, 1)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+      );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+
+  .nav-item a:hover {
+    background-size:  0 3px, 100% 3px;
+  }
+
+  .members {
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .disc__picker {
+    flex-wrap: nowrap;
+  }
+
+  .picker__album {
+  height: 100%;
+  width: 25%;
+  }
+
+  .secalbum__title {
+  width: 50%;
+  }
+
+.secalbum__spotify {
+  width: 50%;
+  }
+}
