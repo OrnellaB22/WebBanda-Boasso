@@ -20,45 +20,65 @@
 </head>
 <body>
 	<div class="moon__loading"></div>
-	<div class="navbar navbar-expand-lg px-2">
-		<a class="navbar-brand logo" href="./index.html">
-		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      		<span class="navbar-toggler-icon"></span>
-    	</button>
-    	<div class="collapse navbar-collapse justify-left" id="navbarSupportedContent">
-      		<ul class="navbar-nav">
-        		<li class="nav-item">
-        			<a class="nav-link rainbow-hover" href="./index.html">Home</a>
-        		</li>
-        		<li class="nav-item">
-        			<a class="nav-link" href="./members.html">Miembros</a>
-        		</li>
-        		<li class="nav-item">
-        			<a class="nav-link" href="./bio.html">Discografía</a>
-        		</li>
-        		<li class="nav-item">
-        			<a class="nav-link" href="./tourDates.html">Tour</a>
-        		</li>
-        		<li class="nav-item">
-        			<a class="nav-link" href="./contacto.html">Contacto</a>
-        		</li>
-        	</ul>
-        </div>
+	<div class="container-fluid banner">
+		<div class="navbar navbar-expand-lg px-2">
+			<a class="navbar-brand logo" href="./index.html"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      		<span class="navbar-toggler-icon"></span>
+	    	</button>
+	    	<div class="collapse navbar-collapse justify-left" id="navbarSupportedContent">
+	      		<ul class="navbar-nav">
+	        		<li class="nav-item">
+	        			<a class="nav-link rainbow-hover" href="./index.html">Home</a>
+	        		</li>
+	        		<li class="nav-item">
+	        			<a class="nav-link" href="./members.html">Miembros</a>
+	        		</li>
+	        		<li class="nav-item">
+	        			<a class="nav-link" href="./bio.html">Discografía</a>
+	        		</li>
+	        		<li class="nav-item">
+	        			<a class="nav-link" href="./tourDates.html">Tour</a>
+	        		</li>
+	        		<li class="nav-item">
+	        			<a class="nav-link" href="./contacto.html">Contacto</a>
+	        		</li>
+	        	</ul>
+	        </div>
+		</div>
 	</div>
-	<main>
+	<main class="container">
 		<div class="mainTitle">
 			<div class="environment"></div>
 			<h1 class="h1T glitch layers" data-text="Loona"><span>Loona</span></h1>
-		</div>
-		<div class="container-fluid banner">
 		</div>
 		<div class="container textIndex mt-3">
 			<h2>> HISTORIA</h2>
 			<p>LOONA is a South Korean girl group formed by Blockberry Creative (BBC). The girl group was revealed in a periodic fashion, corresponding to their Korean name Idarui Sonyeo (이달의 소녀) which translates to "Girl of the Month". LOONA consists of twelve members; HeeJin, HyunJin, HaSeul, YeoJin, ViVi, Kim Lip, JinSoul, Choerry, Yves, Chuu, Go Won and Olivia Hye. Each release from all members helped build the LOONAVERSE of LOONA which is LOONA's concept and is still ongoing at this time.<br>
 			LOONA officially debuted on August 19, 2018 with the title track "Hi High" from their first album release as a group "[+ +]". On February 19, 2019 "[+ +]" was repackaged under the name "[X X]" with the title track "Butterfly". December 13, 2019 was a special date for Orbits as LOONA had released the single "365" for their fans to say thank you for waiting due to company related issues. Finally, on February 5th 2020, LOONA came back with their second third named "#" with the title song "So What".</p>
 		</div>
-		<div class="container textIndex">
+		<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+		    	<div class="carousel-item active">
+		      		<img src="./assets/slide1.jpg" class="d-block w-100" alt="...">
+		    	</div>
+		    	<div class="carousel-item">
+		      		<img src="./assets/slide2.jpg" class="d-block w-100" alt="...">
+		    	</div>
+		    	<div class="carousel-item">
+		      		<img src="./assets/slide3.jpg" class="d-block w-100" alt="...">
+		    	</div>
+		  	</div>
+		  	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+		    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    	<span class="visually-hidden">Previous</span>
+		  	</button>
+		  	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+		    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    	<span class="visually-hidden">Next</span>
+		  	</button>
+		</div>
+		<div class="container textIndex mt-3">
 			<h2>> LOGROS Y PREMIOS</h2>
 			<p>As freshly grown 3-year-old group, LOONA has won a plethora of achievements that many rookie groups dream to win. The list goes as followed with only a few of what LOONA has achieved in their 3 years of debut: International 2018 MTV Europe Music Awards – Best Korean Act (YeoJin is the youngest nominee and winner in history)
 
@@ -130,7 +150,7 @@ LOONA won their first music show award on MCountdown, supposedly one of the hard
 	</main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-	<footer class="navbar px-2">
+	<footer class="navbar footer px-2">
 			<p class="mb-0">Copyright  ©2022 BlockBerry Creative. All rights reserved</p>
 		<div class="footer__socials">
 			<a class="fa-brands fa-youtube px-2" target="_blank" href="https://youtube.com/c/loonatheworld"></a>
